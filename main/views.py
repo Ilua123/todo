@@ -3,6 +3,8 @@ from django.http import HttpResponseRedirect
 from.models import Todo
 # Create your views here.
 
+
+# main page
 def todo(request):
     todos = Todo.objects.all()
     context = {'todos':todos}
